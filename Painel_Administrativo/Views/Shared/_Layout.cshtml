@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - Painel_Administrativo</title>
+    <title>@ViewData["Title"] - Painel Administrativo</title>
 
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="~/adminlte/plugins/fontawesome-free/css/all.min.css">
@@ -14,13 +14,24 @@
     @RenderSection("Styles", required: false)
 </head>
 
-<body>
-    
-    <!--Configuração das Paginas Criadas-->
+<body> 
+    <!--Configuração das Paginas Criadas--> 
+   
     <partial name="_Navbar" />
     <partial name="_Sidebar" />
+    
+       
+        
+       <!--
+        <partial name="_Inicio" />
+       -->
+   
     @RenderBody()
-    <partial name="_Footer" />
+
+    
+        <partial name="_Footer" />
+    
+    
 
 
 

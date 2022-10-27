@@ -28,6 +28,30 @@ namespace Painel_Administrativo.Controllers
             return View();
         }
 
+
+        //Controlador para Chamar Pagina Inicial
+        public IActionResult Inicio()
+        {
+            //ViewData["Message"] = "Página inicial do Projeto.";
+            //return RedirectToPage("/Home/Inicio");
+            return View();
+        }
+
+        //Controlador para Chamar Pagina Inicial
+        public IActionResult AreaLogin()
+        {
+            //return RedirectToPage("/Home/AreaLogin");
+            return View();
+        }
+
+        public IActionResult CadastroLogin()
+        {
+            //return RedirectToPage("/Home/AreaLogin");
+            //return View("~/Views/Admin/CadastroLogin.cshtml");
+            return View();
+        }
+
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
